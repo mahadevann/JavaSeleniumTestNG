@@ -20,6 +20,8 @@ pipeline {
                     sh '''
                         pwd
                         ls
+                        cd target
+                        ls
                     '''
 
                     step([$class: 'Publisher', reportFilenamePattern: '/var/jenkins_home/workspace/JavaSel/target/surefire-report/testng-results.xml'])
