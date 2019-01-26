@@ -17,10 +17,11 @@ pipeline {
             }
             post {
                 always {
-                    sh 'pwd
+                    sh '''
+                        pwd
                         cd
                         pwd
-                    '
+                    '''
 
                     step([$class: 'Publisher', reportFilenamePattern: '/var/jenkins_home/workspace/JavaSel/target/surefire-report/testng-results.xml'])
                 }
