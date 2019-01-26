@@ -18,7 +18,7 @@ pipeline {
             post {
                 always {
                     sh 'pwd'
-                    step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
+                    step([$class: 'Publisher', reportFilenamePattern: '/var/jenkins_home/workspace/JavaSel/target/surefire-report/testng-results.xml'])
                 }
             }
         }
