@@ -17,6 +17,7 @@ pipeline {
             }
             post {
                 always {
+                    sh 'pwd'
                     step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
                 }
             }
