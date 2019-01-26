@@ -3,13 +3,13 @@
 <suite name="Suite1" verbose="1" >
     <test name="Test1">
         <classes>
-            <class name="com.Curweb.web1.TestCase1"/>
-            <class name="com.Curweb.web1.TestCase2"/>
+            <class name="com.yourweb.webapp.TestCase1"/>
+            <class name="com.yourweb.webapp.TestCase2"/>
         </classes>
     </test>
     <test name="Test2">
         <classes>
-            <class name="com.Curweb.web1.TestCase1"/>
+            <class name="com.yourweb.webapp.TestCase1"/>
         </classes>
     </test>
 </suite>
