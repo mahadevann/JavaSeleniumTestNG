@@ -24,7 +24,7 @@ pipeline {
                         ls
                     '''
 
-                    step([$class: 'Publisher', reportFilenamePattern: '/var/jenkins_home/workspace/JavaSel/target/surefire-report/testng-results.xml'])
+                    step([$class: 'Publisher', reportFilenamePattern: '*/target/surefire-reports/testng-results.xml'])
                 }
             }
         }
